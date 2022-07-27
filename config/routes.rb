@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   post 'generate', to: 'generate#create'
   get 'available', to: 'generate#available'
   post 'available', to: 'generate#back'
+  get 'unblock', to: 'unblock#home'
+  post 'unblock', to: 'unblock#update'
 end

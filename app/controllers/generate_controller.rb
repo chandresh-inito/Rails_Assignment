@@ -21,6 +21,5 @@ class GenerateController < ActionController::Base
         redirect_to root_path
     end
     
-    
 
 end
