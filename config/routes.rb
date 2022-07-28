@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   post 'available', to: 'generate#back'
   get 'unblock', to: 'unblock#home'
   post 'unblock', to: 'unblock#update'
+  get 'show', to: 'generate#show'
+  post 'show', to: 'generate#destroy'
+  get 'alive', to: 'generate#keepalive'
 end
