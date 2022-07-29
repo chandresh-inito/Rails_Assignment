@@ -1,0 +1,8 @@
+<h2> Activate the key  </h2>
+
+<%= form_with url: "/activate" , method: :patch do |form| %>
+    <%= form.label :api_key %>
+    <%= form.text_field :api_key %> 
+    <%= form.submit "Activate" %>
+<%end%>
+

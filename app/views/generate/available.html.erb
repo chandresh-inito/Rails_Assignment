@@ -1,20 +1,6 @@
-<%@api_key = ApiKey.all%>
-<%status = "No Key is available (404) "%>
-
-<%@api_key.each do |key|%>
-    <%if key.block_status == "NO" then%>
-        <%status = key.api_key%>
-        <%key.block_status="YES"%>
-        <%key.save%>
-        <%break%>
-    <%end%>
+<% flash.each do |key,value| %>
+    <%=value%>
 <%end%>
 
-<%= status%>
-
-
-<% form_with do |f| %>
-  <%= f.submit "Go back to Home" %>
-<% end %> 
 
 

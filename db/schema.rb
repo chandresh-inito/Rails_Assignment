@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_28_080312) do
+ActiveRecord::Schema.define(version: 2022_07_29_094905) do
 
   create_table "api_keys", force: :cascade do |t|
     t.string "api_key"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "block_status"
+    t.datetime "activated_at", default: "2022-07-29 09:45:58"
   end
 
   create_table "delayed_jobs", force: :cascade do |t|

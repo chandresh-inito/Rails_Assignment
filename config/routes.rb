@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   get 'show', to: 'generate#show'
   post 'show', to: 'generate#destroy'
   get 'alive', to: 'generate#keepalive'
+  get 'activate', to:'generate#showactivate'
+  patch 'activate', to:'generate#activate'
 end
+
+
